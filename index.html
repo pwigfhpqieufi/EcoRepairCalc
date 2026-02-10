@@ -267,36 +267,6 @@
                         </div>
                     </div>
 
-                    <!-- Functional State -->
-                    <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-2">Current Condition</label>
-                        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
-                            <div class="flex justify-between items-center mb-4">
-                                <span id="conditionLabel" class="text-sm font-bold text-eco-700 bg-eco-50 px-3 py-1 rounded-full border border-eco-100 transition-all">Usable but Glitchy</span>
-                                <span id="conditionEmoji" class="text-2xl transition-transform">😐</span>
-                            </div>
-                            
-                            <input type="range" id="condition" min="1" max="5" step="1" value="3" 
-                                class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-eco-600"
-                                oninput="updateConditionUI(this.value)">
-                                
-                            <div class="flex justify-between mt-2 px-1">
-                                <div class="w-1 h-2 bg-slate-300 rounded-full"></div>
-                                <div class="w-1 h-2 bg-slate-300 rounded-full"></div>
-                                <div class="w-1 h-2 bg-slate-300 rounded-full"></div>
-                                <div class="w-1 h-2 bg-slate-300 rounded-full"></div>
-                                <div class="w-1 h-2 bg-slate-300 rounded-full"></div>
-                            </div>
-                            <div class="flex justify-between text-[10px] text-slate-400 font-medium mt-1 px-0">
-                                <span class="w-16 text-left">Dead</span>
-                                <span class="w-16 text-center">Major</span>
-                                <span class="w-16 text-center">Usable</span>
-                                <span class="w-16 text-center">Minor</span>
-                                <span class="w-16 text-right">Perfect</span>
-                            </div>
-                        </div>
-                    </div>
-
                     <button type="submit" class="w-full bg-eco-600 hover:bg-eco-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-eco-200 transition transform active:scale-95 flex items-center justify-center gap-2">
                         <i class="fa-solid fa-calculator"></i> Calculate Impact
                     </button>
